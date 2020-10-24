@@ -1,7 +1,9 @@
+
+hello: abc
 #开发环境
 spring:
   profiles: user-service-dev
-hello: abc
+
 
 eureka:
   client:
@@ -21,7 +23,6 @@ management:
 spring:
   profiles: user-service-pro
   
-hello: 521ww
 
 eureka:
   client:
