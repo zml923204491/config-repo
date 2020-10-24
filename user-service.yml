@@ -1,3 +1,4 @@
+#开发环境
 spring:
   profiles: user-service-dev
 hello: abc
@@ -6,11 +7,17 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 
   
   
 
-   
+#生产环境  
 spring:
   profiles: user-service-pro
   
@@ -20,3 +27,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
