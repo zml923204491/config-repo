@@ -5,7 +5,7 @@ hello: abc
 spring:
   profiles: user-service-dev
 
-
+hello: abc
 eureka:
   client:
     service-url:
