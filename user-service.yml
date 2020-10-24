@@ -1,6 +1,13 @@
 spring:
   profiles: user-service-dev
-hello: abc  
+hello: abc
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+  
   
 
    
@@ -8,3 +15,8 @@ spring:
   profiles: user-service-pro
   
 hello: 521ww
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
