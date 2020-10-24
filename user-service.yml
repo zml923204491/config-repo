@@ -1,5 +1,6 @@
 
 hello: abc
+---
 #开发环境
 spring:
   profiles: user-service-dev
@@ -18,7 +19,7 @@ management:
 
   
   
-
+---
 #生产环境  
 spring:
   profiles: user-service-pro
