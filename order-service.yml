@@ -5,7 +5,7 @@ info:
 spring:
   profiles: order-service-test
 server:
-  port: 8086
+  port: 8082
 eureka:
   client:
     service-url:
@@ -19,7 +19,7 @@ eureka:
 spring:
   profiles: order-service-prd
 server:
-  port: 8082
+  port: 8086
 eureka:
   client:
     service-url:
