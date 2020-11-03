@@ -1,11 +1,10 @@
-
-hello: abc
 ---
 #开发环境
 spring:
-  profiles: user-service-dev
+  profiles: user-service-test
 
-hello: abc
+server:
+  port: 8083
 eureka:
   client:
     service-url:
@@ -22,8 +21,9 @@ management:
 ---
 #生产环境  
 spring:
-  profiles: user-service-pro
-  
+  profiles: user-service-prd
+server:
+  port: 8087
 
 eureka:
   client:
