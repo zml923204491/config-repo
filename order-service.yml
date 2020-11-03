@@ -1,4 +1,7 @@
 
+info:
+  description: order-service
+---
 spring:
   profiles: order-service-test
 server:
@@ -11,7 +14,7 @@ eureka:
     fetch-registry: true
 
 
-------------------------
+---
 
 spring:
   profiles: order-service-prd
